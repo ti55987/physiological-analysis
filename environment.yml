@@ -1,0 +1,37 @@
+name: physiological-analysis
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.8.10
+  - pytorch=2.1
+  - pandas=1.4.1
+  - nb_conda
+  - numpy=1.24.3
+  - openblas
+  - ipywidgets
+  - matplotlib
+  - tqdm=4.59.0
+  - docopt=0.6.2
+  - jupyter
+  - notebook
+  - seaborn
+  - pip=21.1.2
+  - plotly
+  - python-kaleido
+  - pip:
+    - kymatio
+    - latex
+    - scipy
+    - sklearn
+    - cebra
+    - chardet
+    - mat73
+    - sentencepiece
+    - mne
+    - jupyter_contrib_nbextensions
+    - biosppy
+    - sacrebleu
+    - nltk
+    - timeout_decorator
