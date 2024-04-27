@@ -1,6 +1,5 @@
 from enum import Enum
 
-
 class Feature(Enum):
     EEG_SPECTRAL = 28
     DELTA = 1
@@ -11,18 +10,6 @@ class Feature(Enum):
     GAMMA = 6
     ALL_SPECTRAL = 18
     ALL_CHANNEL_SPECTRAL = 19
-    # statistical features
-    MEAN = 7
-    STD = 8
-    PTP = 9
-    VAR = 10
-    MINIM = 11
-    MAXIM = 12
-    MEAN_SQUARE = 13
-    RMS = 14
-    ABS_DIFF = 15
-    SKEWNESS = 16
-    KURTOSIS = 17
 
     ECG_LF = 20
     ECG_HF = 21

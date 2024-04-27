@@ -86,16 +86,16 @@ def decode_marker_data(
                 )
             )
 
-            accuracy[channel][f] = np.mean(ac_scores)
+            accuracy[channel][f] = ac_scores
        
     return list_embedding_tuple, accuracy
 
 def get_metadata(accuracy: dict):
-    all_channels, all_feature_name, mean_scores = [], [], []
+    all_channels, all_feature_name, cv_scores = [], [], []
     for k, v in accuracy.items():
         for f, score in v.items():
-            mean_scores.append(score)
+            cv_scores.append(score)
             all_channels.append(k)
             all_feature_name.append(f)
 
-    return all_channels, all_feature_name, mean_scores
+    return all_channels, all_feature_name, cv_scores
