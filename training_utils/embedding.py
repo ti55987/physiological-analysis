@@ -1,9 +1,7 @@
 
-import numpy as np
-import matplotlib.pyplot as plt
-
 from sklearn.decomposition import PCA
-from cebra import CEBRA, KNNDecoder
+import cebra
+from cebra import CEBRA
 
 def model_fit(
     neural_data,
